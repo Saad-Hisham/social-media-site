@@ -789,6 +789,7 @@ img.chat-side-image {
   border-style: none;
   border-radius: 50%;
   width: 11rem;
+  height: 11rem;
   border: 5px solid white;
 }
 
