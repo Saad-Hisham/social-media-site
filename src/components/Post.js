@@ -275,7 +275,7 @@ function Post() {
                                                 onClick={() => {
                                                     navigate(`/${x.id}`);
                                                 }}
-                                            ><img src={x.img != null ? x.img : userProfile} /></span>
+                                            ><img src={x.img != "" ? x.img : userProfile} /></span>
                                             <div className='comment-content'>
                                                 <span>{x.publisher}</span>
                                                 <p>{x.content}</p>
