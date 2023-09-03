@@ -276,6 +276,7 @@ function Post() {
                                                     navigate(`/${x.id}`);
                                                 }}
                                             ><img src={x.img != "" ? x.img : userProfile} /></span>
+                                    {console.log(x)}
                                             <div className='comment-content'>
                                                 <span>{x.publisher}</span>
                                                 <p>{x.content}</p>
