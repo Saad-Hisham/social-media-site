@@ -169,8 +169,8 @@ function Post() {
 
     }
     const addComment = (e) => {
-        { userLocal.user.photoURL != "" ? setProfile(userLocal.user.photoURL) : setProfile(userProfile) }
-        setComment({ content: e.target.value, publisher: userLocal.user.displayName, img: profile, id: userLocal.user.uid })
+        
+        setComment({ content: e.target.value, publisher: userLocal.user.displayName, img: { userLocal.user.photoURL != "" ? userLocal.user.photoURL : userProfile}, id: userLocal.user.uid })
 
     }
     const submitComment = async (e, z) => {
