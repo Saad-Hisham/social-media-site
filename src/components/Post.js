@@ -169,7 +169,7 @@ function Post() {
 
     }
     const addComment = (e) => {
-        { userLocal.user.photoURL != null ? setProfile(userLocal.user.photoURL) : setProfile(userProfile) }
+        { userLocal.user.photoURL != "" ? setProfile(userLocal.user.photoURL) : setProfile(userProfile) }
         setComment({ content: e.target.value, publisher: userLocal.user.displayName, img: profile, id: userLocal.user.uid })
 
     }
@@ -276,7 +276,6 @@ function Post() {
                                                     navigate(`/${x.id}`);
                                                 }}
                                             ><img src={x.img != "" ? x.img : userProfile} /></span>
-                                    {console.log(x)}
                                             <div className='comment-content'>
                                                 <span>{x.publisher}</span>
                                                 <p>{x.content}</p>
