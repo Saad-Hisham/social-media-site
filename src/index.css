@@ -815,8 +815,10 @@ img.chat-side-image {
   }
 }
 .friend-block img {
-  width: 14rem;
-  height: 14rem;
+    max-height: 14rem;
+    max-width: 14rem;
+    width: 100%;
+    height: 10rem;
 }
 .friend-block .friend-name {
   margin-top: .5rem;
