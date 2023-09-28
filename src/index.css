@@ -75,6 +75,7 @@ a {
 
 @media screen and (min-width: 768px) {
 
+
   #sign-form {
     max-width: 400px;
   }
@@ -146,12 +147,21 @@ svg.logo {
 }
 
 @media screen and (max-width: 992px) {
+  .options {
+    flex-direction: column;
+}
+  .friend-block img {
+    height: 12rem;
+    max-width: 15rem;
+    width: 15rem;
+}
   .chat-section {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
+
 
 
   .side-bar-parent ul li span:nth-of-type(2) {
@@ -470,7 +480,6 @@ p.upload-state {
 
 .post-info img {
   width: 2rem;
-  height: 2rem;
   border-radius: 50%;
 }
 
@@ -790,7 +799,6 @@ img.chat-side-image {
   border-style: none;
   border-radius: 50%;
   width: 11rem;
-  height: 11rem;
   border: 5px solid white;
 }
 
@@ -815,10 +823,8 @@ img.chat-side-image {
   }
 }
 .friend-block img {
-    max-height: 14rem;
-    max-width: 14rem;
-    width: 100%;
-    height: 10rem;
+  width: 100%;
+  height: 12rem;
 }
 .friend-block .friend-name {
   margin-top: .5rem;
@@ -826,16 +832,29 @@ img.chat-side-image {
 .friend-block {
   margin-top: .5rem;
 }
-.friend-block  span {
+.friend-block span {
   background: #225eb7;
   color: white;
-  padding: 2px;
+  padding: 1px;
   cursor: pointer;
   margin-bottom: 1rem;
+  width: 49%;
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  padding: .5rem;
 }
 .friend-block a{
   margin-left: .4rem
 }
 .friend-block a{
   display: inline-block;
+}
+.friend-block span a {
+  color: white;
+  margin: 0;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
 }
