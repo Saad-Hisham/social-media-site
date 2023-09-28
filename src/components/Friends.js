@@ -69,13 +69,13 @@ function Friends() {
                                             <img src={user.userImage != "" ? user.userImage : userProfile} />
                                         </div>
                                         <div className="friend-name">{user.Username}</div>
-                                        <div>
+                                        <div className="options">
                                             <span onClick={() => {
                                                 handleChatClick(user.Userid)
 
                                             }}>Add to Chats </span>
                                             
-                                            <Link to={`/${user.Userid}`}><span>View Profile</span></Link>
+                                            <span> <Link to={`/${user.Userid}`}>View Profile</Link></span>
                                         </div>
                                     </div>
                                 )
